@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from "./components/Layout";
+import { Switch, Route, Router } from "react-router-dom";
+import Home from "./pages/Home";
+import PageTwo from "./pages/PageTwo";
+import PageThree from "./pages/PageThree";
+import PageOne from "./pages/PageOne";
+import PageCTA from "./pages/PageCTA";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+
+        <Route path="/page-one">
+          <PageOne />
+        </Route>
+
+        <Route path="/page-two">
+          <PageTwo />
+        </Route>
+
+        <Route path="/page-three">
+          <PageThree />
+        </Route>
+
+        <Route path="/page-cta">
+          <PageCTA />
+        </Route>
+      </Switch>
+    </Layout>
   );
 }
 
