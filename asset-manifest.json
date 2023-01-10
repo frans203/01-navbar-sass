@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/01-navbar-sass/static/css/main.f4fd8406.css",
+    "main.js": "/01-navbar-sass/static/js/main.dd082423.js",
+    "index.html": "/01-navbar-sass/index.html",
+    "main.f4fd8406.css.map": "/01-navbar-sass/static/css/main.f4fd8406.css.map",
+    "main.dd082423.js.map": "/01-navbar-sass/static/js/main.dd082423.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4fd8406.css",
+    "static/js/main.dd082423.js"
+  ]
+}
